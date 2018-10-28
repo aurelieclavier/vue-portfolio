@@ -24,7 +24,6 @@
                     @media screen and (min-width: $small-desktop) {
                         left: 50%;
                         z-index: 5;
-                        //margin: 0 1rem;
                     }
                 }
 
@@ -32,6 +31,23 @@
                     position: relative;
                     margin: 0;
                     text-align: left;
+                    @media screen and (min-width: $small-desktop) {
+                        clear: both;
+                        overflow: hidden;
+                        margin: 1rem 0;
+                        &:nth-child(even) {
+                            .js-cd-content {
+                                float: right;
+
+                            }
+                        }
+                        &:nth-child(odd) {
+                            .cd-timeline__date {
+                                text-align: left;
+                                right: -125%;
+                            }
+                        }
+                    }
 
                     &__img {
                         position: absolute;
@@ -72,12 +88,9 @@
                     &__content {
                         position: relative;
                         margin-left: 4rem;
-                        border-radius: 0.25em;
-                        padding: 0 0 1rem 0;
-                        -webkit-box-shadow: 0 3px 0 #f1f1f1;
-                        box-shadow: 0 3px 0 #f1f1f1;
                         @media screen and (min-width: $small-desktop) {
-                            margin: 1rem 1rem 1rem 0;
+                            margin: 0;
+                            width: 45%;
                         }
                         h2 {
                             color: $color-blue-vue;
@@ -91,9 +104,9 @@
                             }
                         }
                         ul {
-                            @media screen and (min-width: $small-desktop) {
-                                width: 45%;
-                            }
+                            border-bottom: 4px solid $lightgrey;
+                            width: 100%;
+                            padding-bottom: 1rem;
                             li {
                                 padding: 0.3rem 0;
                                 &:before {
@@ -109,8 +122,11 @@
                             font-size: 1.3rem;
                             @media screen and (min-width: $small-desktop) {
                                 position: absolute;
-                                right: 0;
-                                bottom: 0;
+                                right: 125%;
+                                top: 6px;
+                                width: 100%;
+                                text-align: right;
+                                
                             }
                         }
                     }
