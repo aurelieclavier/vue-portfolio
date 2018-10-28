@@ -1,28 +1,99 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AnimatedBackground v-bind:num="200" v-bind:max-radius="40" v-bind:colors="['#42b883', '#35495E','lightgrey']"/>
+    <div id="wrapper">
+			<router-view/>
+      <FooterComponent></FooterComponent>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AnimatedBackground from './components/AnimatedBackground.vue'
+import HeaderComponent from './components/Header.vue'
+import NavComponent from './components/Nav.vue'
+import AboutComponent from './components/About.vue'
+import SkillsComponent from './components/Skills.vue'
+import ExperienceComponent from './components/Experience.vue'
+import FooterComponent from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    AnimatedBackground,
+    HeaderComponent,
+    NavComponent,
+    AboutComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    FooterComponent
+  },
+  data() {
+    return {
+      sticky: false,
+      scrollPositionStart: 0
+    }
+  },
+  methods: {
+    handleScroll () {
+      // var init
+      var main                  = document.getElementsByClassName('main');
+      var mainID                = document.getElementById('main');
+      var nav                   = document.getElementById('nav');
+      var scrollPosition        = document.documentElement.scrollHeight;
+      // Scroll position
+      var scrollDistance        = parseInt(window.scrollY);
+      var documentHeight        = parseInt(scrollDistance + window.innerHeight);
+      // Nav position
+      var navOffsetTop          = nav.offsetTop;
+      var isNavOffsetTopBigger  = (navOffsetTop > scrollDistance);
+      var isNavOffsetTOpEqual   = (navOffsetTop == scrollDistance);
+      var isSticky              = false;
+
+      if(isNavOffsetTopBigger) {
+        if(this.sticky) {
+          nav.style.padding     = "10px 0px 10px 0px";
+          nav.style.transition  = "all .8s";
+          this.sticky = false;
+        }
+      }else if (isNavOffsetTOpEqual) {
+        if (!this.sticky) {
+          nav.style.position = "fixed" ;
+          nav.style.padding = "0px";
+          nav.style.transition = "all .8s";
+          this.sticky = true;
+        }
+      }
+
+      if ((document.body.getBoundingClientRect()).top > this.scrollPositionStart){
+        if (navOffsetTop == 0 && scrollDistance < 280 && !isSticky) {
+          nav.style.position = "sticky";
+          nav.style.transition = "all .8s";
+          isSticky = true;
+        }
+      }
+
+      for (let i = 0; i < main.length; i++) {
+        const element = main[i];
+        if ((element.offsetTop + mainID.offsetTop - 80) <= scrollDistance) {
+          document.getElementsByClassName('active')[0].classList.remove('active');
+          document.getElementsByClassName('nav-link')[i].classList.add('active');
+        }else if(scrollPosition - documentHeight < 100) {
+          document.getElementsByClassName('active')[0].classList.remove('active');
+          document.getElementsByClassName('nav-link')[main.length-1].classList.add('active');
+        }
+      }
+      this.scrollPositionStart = (document.body.getBoundingClientRect()).top;
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
+
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./assets/css/import.scss" lang="scss"></style>

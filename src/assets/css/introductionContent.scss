@@ -1,0 +1,27 @@
+#main {
+    #content {
+        width: 100%;
+        h2 {
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem 0;
+            line-height: 1.5;
+        }
+        p {
+            width: 90%;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.5;
+            padding: .5rem 0;
+            @media screen and (min-width: $tablet) {
+                width: 80%;
+            }
+        }
+        .button {
+            @include button-style();
+            @media screen and (min-width: $tablet) {
+                margin: 0 auto;
+            }
+        }
+    }
+}

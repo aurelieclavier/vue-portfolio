@@ -1,0 +1,120 @@
+#contact {
+    margin-top: 8rem;
+    @media screen and (min-width: $tablet) {
+        margin-top: 15rem;
+    }
+    #cv {
+        a {
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+            border: 1px solid lightgrey;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            .icon-file-text {
+                color: $color-blue-vue;
+                width: 80px;
+                height: 80px;
+                border: 1px solid lightgrey;
+                padding: .8rem;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                transition: 0.8s;
+                -webkit-transition: 0.8s;
+                -moz-transition: 0.8s;
+                -ms-transition: 0.8s;
+                -o-transition: 0.8s;
+
+                &:hover {
+                    color: $color-green-vue;
+                }
+            }
+        }
+    }
+    section {
+        background-color: $white;
+        position: relative;
+        z-index: 3;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            @include style-h2();
+            padding: 1rem 0;
+
+        }
+        .contact {
+            li {
+                text-align: center;
+                line-height: 2;
+                font-size: 1rem;
+                a {
+                    color: $color-blue-vue;
+                    text-align: center;
+                    &:hover {
+                        text-decoration: none;
+                        color: $color-green-vue;
+                    }
+                }
+                .icon {
+                    color: $color-green-vue;
+                    margin: 0 .5rem;
+                }
+            }
+        }
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0 0 0;
+            li {
+                height: 50px;
+                width: 50px;
+                height: 50px;
+                width: 50px;
+                border: 1px solid lightgray;
+                margin: 0.5rem;
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                a {
+                    font-size: 2rem;
+                    color: $color-blue-vue;
+                    border: 1px solid lightgray;
+                    padding: .5rem;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    transition: 0.8s;
+                    -webkit-transition: 0.8s;
+                    -moz-transition: 0.8s;
+                    -ms-transition: 0.8s;
+                    -o-transition: 0.8s;
+
+                    &:hover {
+                        color: $color-green-vue;
+                    }
+                }
+            }
+        }
+    }
+}

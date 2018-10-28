@@ -1,0 +1,63 @@
+#main {
+    #skills {
+        .features {
+            @media screen and (min-width: $tablet) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            @media screen and (min-width: $small-desktop) {
+                flex-wrap: nowrap;
+            }
+            li {
+                @media screen and (min-width: $tablet) {
+                    float: left;
+                    width: 45%;
+                }
+                @media screen and (min-width: $small-desktop) {
+                    width: 30%;
+                    margin: 0 1rem;
+                }
+                div {
+                    display: flex;
+                    padding: .5rem;
+                    border-radius: 100%;
+                    border: 1px solid lightgrey;
+                    margin: 1rem auto;
+                    width: fit-content;
+                    height: fit-content;
+                    .icon{
+                        color: $color-blue-vue;
+                        width: 100px;
+                        height: 100px;
+                        border: 1px solid lightgray;
+                        border-radius: 100%;
+                        padding: 1rem;
+                        &-code,&-plus{
+                            color: $color-green-vue;
+                        }
+                    }
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    border-bottom: 1px solid lightgray;
+                    padding: 1rem 0;
+                    @media screen and (min-width: $small-desktop) {
+                        min-height: 80px;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                    }
+                }
+                p {
+                    text-align: center;
+                    padding: 1rem 0;
+                    @media screen and (min-width: $small-desktop) {
+                        text-align: justify;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+}

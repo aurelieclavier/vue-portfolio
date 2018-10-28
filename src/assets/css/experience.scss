@@ -1,0 +1,121 @@
+#main {
+    #exp {
+        @media screen and (min-width: $tablet) {
+            clear: both;
+        }
+        .cd-timeline {
+            overflow: hidden;
+            @media screen and (min-width: $tablet) {
+                width: 100%;
+            }
+            &__container {
+                position: relative;
+                margin: 0 auto;
+                top: 0;
+                &::before {
+                    /* this is the vertical line */
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 18px;
+                    height: 100%;
+                    width: 4px;
+                    background: $lightgrey;
+                    @media screen and (min-width: $small-desktop) {
+                        left: 50%;
+                        z-index: 5;
+                        //margin: 0 1rem;
+                    }
+                }
+
+                &__block {
+                    position: relative;
+                    margin: 0;
+                    text-align: left;
+
+                    &__img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 10000;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        -webkit-box-shadow: 0 0 0 4px $white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+                        box-shadow: 0 0 0 4px $white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+                        background: $lightgrey;
+                        text-align: center;
+
+                        @media screen and (min-width: $small-desktop) {
+                            left: 47%;
+                            width: 60px;
+                            height: 60px;
+                        }
+
+                        img {
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            position: relative;
+                            left: 50%;
+                            top: 50%;
+                            margin-left: -12px;
+                            margin-top: -12px;
+                        }
+
+                        .icon-lightbulb {
+                            height: 100%;
+                            color: $color-green-vue;
+                            font-size: 1.5rem;
+                        }
+                    }
+                    &__content {
+                        position: relative;
+                        margin-left: 4rem;
+                        border-radius: 0.25em;
+                        padding: 0 0 1rem 0;
+                        -webkit-box-shadow: 0 3px 0 #f1f1f1;
+                        box-shadow: 0 3px 0 #f1f1f1;
+                        @media screen and (min-width: $small-desktop) {
+                            margin: 1rem 1rem 1rem 0;
+                        }
+                        h2 {
+                            color: $color-blue-vue;
+                            margin: .5rem 0;
+                            font-size: 1.3rem;
+                            text-align: left;
+                            position: relative;
+                            top: -5px;
+                            &:after {
+                                display: none;
+                            }
+                        }
+                        ul {
+                            @media screen and (min-width: $small-desktop) {
+                                width: 45%;
+                            }
+                            li {
+                                padding: 0.3rem 0;
+                                &:before {
+                                    content: '- ';
+                                }
+                            }
+                        }
+                        .cd-timeline__date {
+                            display: inline-block;
+                            padding: .8em 0;
+                            color: $color-green-vue;
+                            opacity: .6;
+                            font-size: 1.3rem;
+                            @media screen and (min-width: $small-desktop) {
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

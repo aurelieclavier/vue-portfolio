@@ -1,0 +1,62 @@
+#nav {
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: block;
+        background-color: $lightgrey;
+        color: #636363;
+        position: sticky;
+        z-index: 5;
+        top: 0;
+        width: 100%;
+        cursor: default;
+        text-align: center;
+        padding: 1rem 0;
+
+
+        -moz-transition: 0;
+        -webkit-transition: 0;
+        -ms-transition: 0;
+        transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+        background-color: $lightgrey;
+
+        border-top-left-radius: 0.25em;
+        border-top-right-radius: 0.25em;
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            background-color: $lightgrey;
+            position: relative;
+            z-index: 2;
+            padding: .5rem 0;
+            width: 80%;
+            margin: 0 auto;
+            li {
+                padding: .8rem 1.8rem .8rem 0.8rem;
+                display: flex;
+                align-items: center;
+                &.active {
+                    background-color: $color-green-vue;
+                    padding: .2rem .8rem;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    a {
+                        color: $white;
+                    }
+                }
+                a {
+                    color: $color-blue-vue;
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: $small-desktop) {
+        ul {
+            width: 70%;
+        }
+    }
+}
