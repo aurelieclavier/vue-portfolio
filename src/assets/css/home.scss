@@ -1,0 +1,55 @@
+main {
+  background-color: $lightgrey;
+  padding: 2rem 0;
+  position: relative;
+  top: 35rem;
+  z-index: 1;
+  border-top: .5rem solid $color-blue-vue;
+  border-bottom: .5rem solid $color-blue-vue;
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    .avatar {
+      width: 250px;
+      height: auto;
+      float: left;
+      img {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+}
+    .contain-title p {
+      @include title-contain();
+    }
+    .contain-up {
+      display: flex;
+      justify-content: space-around;
+      article {
+        //@include background-color-light-green();
+        //@include box-shadow-padding();
+
+        width: 50%;
+        margin: 0 1rem;
+        text-align: justify;
+      }
+    }
+    .contain-down {
+      //@include box-shadow-padding();
+      //@include background-color-light-blue();
+
+      margin: 1rem;
+      text-align: justify;
+    }
+    a {
+      @include link();
+    }
+    p {
+      font-size: 1.3rem;
+      margin: 1.5rem 0;
+      line-height: 1.5;
+    }
+  }
+}

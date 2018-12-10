@@ -27,7 +27,6 @@ require('vue2-animate/dist/vue2-animate.min.css')
 Vue.use(VueMaterial)
 Vue.use(vueSmoothScroll)
 
-
 library.add(faCode, faCogs, faPlus, faWrench, faLightbulb, faFilePdf, faLinkedin, faGithub, faCodepen, faPhone, faAt, faChevronLeft, faChevronRight)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

@@ -41,6 +41,7 @@ export default {
       var mainID                = document.getElementById('main');
       var nav                   = document.getElementById('nav');
       var scrollPosition        = document.documentElement.scrollHeight;
+      var header                = document.getElementById('header');
       // Scroll position
       var scrollDistance        = parseInt(window.scrollY);
       var documentHeight        = parseInt(scrollDistance + window.innerHeight);
@@ -49,6 +50,8 @@ export default {
       var isNavOffsetTopBigger  = (navOffsetTop > scrollDistance);
       var isNavOffsetTOpEqual   = (navOffsetTop == scrollDistance);
       var isSticky              = false;
+
+      console.log(navOffsetTop + "  |  " + (mainID.offsetTop + header.offsetTop)  + "   | " + scrollDistance);
 
       if(isNavOffsetTopBigger) {
         if(this.sticky) {
@@ -62,11 +65,12 @@ export default {
           nav.style.padding = "0px";
           nav.style.transition = "all .8s";
           this.sticky = true;
+          // isSticky = false;
         }
       }
 
       if ((document.body.getBoundingClientRect()).top > this.scrollPositionStart){
-        if (navOffsetTop == 0 && scrollDistance < 280 && !isSticky) {
+        if (navOffsetTop == 0 && scrollDistance < (mainID.offsetTop + header.offsetTop) && !isSticky && this.sticky) {
           nav.style.position = "sticky";
           nav.style.transition = "all .8s";
           isSticky = true;

@@ -1,0 +1,34 @@
+.hobbies {
+	section {
+		font-size: 1rem;
+		article {
+			width: 70%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 2rem 0;
+			.pictures {
+				width: 100%;
+				height: auto;
+				text-align: center;
+				img {
+					width: 40%;
+					overflow: hidden;
+					margin: 1rem;
+					border: .2rem solid $white;
+					cursor: pointer;
+				}
+			}
+			h3 {
+				@include h3;
+				width: 100%;
+				text-align: center;
+			}
+			p {
+				padding: 1rem 0;
+			}
+		}
+	}
+}
