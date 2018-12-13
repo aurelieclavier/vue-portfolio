@@ -1,16 +1,12 @@
 <template>
     <section id="intro" class="main">
         <header class="major">
-            <h2>Mon histoire</h2>
+            <h2>{{ content.title }}</h2>
         </header>
         <div class="spotlight">
             <div class="content">
                 <article>
-                    <p>
-                        Il y a un peu plus d'un an maintenant que j'ai choisi de devenir développeuse web.
-                        Pourquoi ? Pour son aspect créatif, pour sa compléxité, pour comprendre comment
-                        tout ça fonctionnait et aussi pour être dans un univers qui me correspondait.
-                    </p>
+                    <p>{{ content.text }}</p>
                     <div class="button">
                         <router-link :to="liens.url" class="router">
                             {{ liens.label }}
@@ -28,19 +24,19 @@
 
 <script>
 export default {
-  name: 'AboutComponent',
-  data () {
-    return {
-        liens:{
-            id: 0,
-            label: 'En savoir plus',
-            url: 'introduction'
-        },
-        items: {
-            id: 0,
-            item:'lorem'
+    name: 'AboutComponent',
+    data () {
+        return {
+            liens:{
+                id: 0,
+                label: 'En savoir plus',
+                url: 'introduction'
+            },
+            content:{
+                title: 'Mon histoire',
+                text: 'Il y a un peu plus d\'un an maintenant que j\'ai choisi de devenir développeuse web. Pourquoi ? Pour son aspect créatif, pour sa compléxité, pour comprendre comment tout ça fonctionnait et aussi pour être dans un univers qui me correspondait.'
+            }
         }
     }
-  }
 }
 </script>
