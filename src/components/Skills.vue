@@ -1,5 +1,5 @@
 <template>
-    <section id="skills" class="main special">
+    <section id="skills" class="main">
         <header class="major">
             <h2>Mes compétences</h2>
         </header>

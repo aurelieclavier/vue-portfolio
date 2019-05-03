@@ -27,7 +27,7 @@
             class="nav-link">
                 <a href="#contact"
                 @click="activate(4)"
-                v-smooth-scroll="{ duration: 1000, offset: -80}">Contact</a>
+                v-smooth-scroll="{ duration: 1000}">Contact</a>
             </li>
         </ul>
     </nav>

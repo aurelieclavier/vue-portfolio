@@ -18,7 +18,6 @@ export default {
         x: null,
         y: null
       },
-      // maxRadius: 30,
       canvas: ''
     }
   },
@@ -44,7 +43,7 @@ export default {
     this.circles = circle.init()
     this.animate()
     var that = this
-    window.addEventListener('resize', function (event) {
+    window.addEventListener('resize', function () {
       that.canvas.width = window.innerWidth
       that.canvas.height = window.innerHeight
       var circle = new Circle(that.mouse.x, that.mouse.y, 0, 0, 5, that.colors, that.canvas, that.ctx, that.mouse)

@@ -51,21 +51,13 @@ export default {
       var isNavOffsetTOpEqual   = (navOffsetTop == scrollDistance);
       var isSticky              = false;
 
-      console.log(navOffsetTop + "  |  " + (mainID.offsetTop + header.offsetTop)  + "   | " + scrollDistance);
-
       if(isNavOffsetTopBigger) {
         if(this.sticky) {
-          nav.style.padding     = "10px 0px 10px 0px";
-          nav.style.transition  = "all .8s";
           this.sticky = false;
         }
       }else if (isNavOffsetTOpEqual) {
         if (!this.sticky) {
-          nav.style.position = "fixed" ;
-          nav.style.padding = "0px";
-          nav.style.transition = "all .8s";
           this.sticky = true;
-          // isSticky = false;
         }
       }
 

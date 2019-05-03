@@ -1,5 +1,5 @@
 <template>
-    <section class="main" id="contact">
+    <footer class="main" id="contact">
         <section id="cv">
             <article class="major">
                 <h2>Mon CV</h2>
@@ -37,7 +37,7 @@
                 </li>
             </ul>
         </section>
-    </section>
+    </footer>
 </template>
 
 <script>

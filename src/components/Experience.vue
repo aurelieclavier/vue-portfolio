@@ -1,5 +1,5 @@
 <template>
-    <section id="exp" class="main special">
+    <section id="exp" class="main">
         <header class="major">
             <h2>Mes expériences</h2>
         </header>
