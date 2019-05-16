@@ -10,7 +10,6 @@
                     <div class="button">
                         <router-link :to="liens.url" class="router">
                             {{ liens.label }}
-                            <font-awesome-icon prefix="fa" icon="chevron-right" class="icon icon-chevron right"/>
                         </router-link>
                     </div>
                 </article>
@@ -34,7 +33,7 @@ export default {
             },
             content:{
                 title: 'Mon histoire',
-                text: 'Il y a un peu plus d\'un an maintenant que j\'ai choisi de devenir développeuse web. Pourquoi ? Pour son aspect créatif, pour sa compléxité, pour comprendre comment tout ça fonctionnait et aussi pour être dans un univers qui me correspondait.'
+                text: 'Il y a un peu plus d\'un an maintenant que j\'ai choisi de devenir développeuse web. Pourquoi? Pour son aspect créatif, pour sa compléxité, pour comprendre comment tout ça fonctionnait et aussi pour être dans un univers qui me correspondait.'
             }
         }
     }
