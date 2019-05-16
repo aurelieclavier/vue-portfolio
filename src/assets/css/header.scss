@@ -1,64 +1,67 @@
 #header {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    margin: 4rem 0;
-    z-index: 2;
-
-    @media screen and (min-width: $tablet) {
-        text-align: center;
-        width: fit-content;
+   height: calc(100vh - 10rem);
+   font-family: 'Lobster Two', cursive;
+    svg {
+        width: 700px;
+        height: auto;
         margin: 0 auto;
+        display: block;
         position: relative;
-        margin: 4rem 0;
-        z-index: 2;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    @media screen and (min-width: $small-desktop) {
-        margin: 8rem 0;
-    }
-
-    h1 {
-        width: 80%;
-        margin: 0 auto;
-        color: $color-blue-vue;
-        text-shadow: 2px 3px 1px $color-green-vue;
-        font-size: 2rem;
-        font-weight: 600;
-        line-height: 1.2;
-        @media screen and (min-width: $small-desktop) {
+        z-index: 3;
+        &:first-child {
+            margin-top: 10rem;
+        }
+        &:last-child {
+            margin-top: 3rem;
+        }
+        .name {
+            letter-spacing: 0.4rem;
+            font-size: 10rem;
+            fill: $color-blue-vue;
+            stroke: $color-green-vue;
+            fill-opacity: 1;
+            stroke-width: 0;
+            stroke-dasharray: 100% 0;
+            animation: stroke-offset 8s infinite;
+            -webkit-animation: stroke-offset 8s infinite;
+        }
+        .job {
             font-size: 4rem;
-            width: auto;
-        }
-        .hidden-mobil {
-            display: none;
-            @media screen and (min-width: $tablet) {
-                display: block;
-                line-height: 0.6;
-            }
-        }
-        .hidden-tablet {
-            display: block;
-            @media screen and (min-width: $tablet) {
-                display: none;
-            }
+            fill: $color-blue-vue;
+            stroke: $color-green-vue;
+            fill-opacity: 1;
+            stroke-width: 0;
+            stroke-dasharray: 100% 0;
+            animation: stroke-offset 8s ease-in-out;
+            -webkit-animation: stroke-offset 8s ease-in-out;
+            -webkit-box-shadow: 10px 18px 12px -8px rgba(0, 0, 0, 0.40);
+            -moz-box-shadow: 10px 18px 12px -8px rgba(0, 0, 0, 0.40);
+            box-shadow: 10px 18px 12px -8px rgba(0, 0, 0, 0.40);
         }
     }
-    p {
-        width: 80%;
-        margin: 0 auto;
-        font-size: 1.5rem;
-        margin-top: .5rem;
-        line-height: 1;
-        @media screen and (min-width: $tablet) {
-            width: fit-content;
-            margin-top: 1.5rem;
-        }
-        @media screen and (min-width: $small-desktop) {
-            font-size: 2.5rem;
-        }
-    }
+    
 
+    @keyframes stroke-offset {
+        0% {
+            fill-opacity: 1;
+            stroke-width: 0;
+            stroke-dasharray: 0% 100%;
+        }
+
+        25% {
+            stroke-width: 3px;
+        }
+
+        50% {
+            fill-opacity: 0;
+        }
+
+        75% {
+            stroke-width: 3px;
+        }
+
+        100% {
+            stroke-width: 0;
+        }
+    }
 }
