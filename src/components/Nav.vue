@@ -25,8 +25,15 @@
             <li id="4"
             :class="{ active : active_el == 4 }"
             class="nav-link">
-                <a href="#contact"
+                <a href="#project"
                 @click="activate(4)"
+                v-smooth-scroll="{ duration: 1000, offset: -80}">Projets</a>
+            </li>
+            <li id="4"
+            :class="{ active : active_el == 5 }"
+            class="nav-link">
+                <a href="#contact"
+                @click="activate(5)"
                 v-smooth-scroll="{ duration: 1000}">Contact</a>
             </li>
         </ul>

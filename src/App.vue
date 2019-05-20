@@ -15,6 +15,7 @@ import NavComponent from './components/Nav.vue'
 import AboutComponent from './components/About.vue'
 import SkillsComponent from './components/Skills.vue'
 import ExperienceComponent from './components/Experience.vue'
+import ProjectComponent from './components/Project.vue'
 import FooterComponent from './components/Footer.vue'
 
 export default {
@@ -26,6 +27,7 @@ export default {
     AboutComponent,
     SkillsComponent,
     ExperienceComponent,
+    ProjectComponent,
     FooterComponent
   },
   data() {
