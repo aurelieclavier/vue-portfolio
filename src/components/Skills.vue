@@ -1,7 +1,7 @@
 <template>
     <section id="skills" class="main">
         <header class="major">
-            <h2>Languages</h2>
+            <h2>Mes compétences</h2>
         </header>
         <ul class="features">
             <li v-for="item in items" :key="item.id">
