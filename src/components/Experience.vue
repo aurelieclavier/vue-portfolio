@@ -22,7 +22,7 @@
                                 <li>Conception et ajout de tables au schéma de données</li>
                                 <li>Formation PLSQL et Perl</li>
                             </ul>
-                            <p>Environnement : PLSQL, Perl, PHP (Khoana), Twig, VueJS, Sass, Debian</p>
+                            <p>Environnement : PLSQL, Perl, PHP (Khoana), Twig, Vue.JS, Sass, Debian</p>
                         </div>
                     </div>
                     <div class="meta-img">
@@ -61,11 +61,11 @@
                                 <li>Réaliser des maquettes responsives HTML 5 / CSS 3</li>
                                 <li>Optimiser la structuration des pages pour le référencement</li>
                                 <li>Concevoir la base de donnée MySQL</li>
-                                <li>Réécrire me code de l'application (PHP, VueJS)</li>
+                                <li>Réécrire me code de l'application (PHP, Vue.JS)</li>
                                 <li>Respecter les bonnes pratiques de développpement</li>
                                 <li>Créer des visuels sous Photoshop pour l'application</li>
                             </ul>
-                            <p>Environnement : HTML, CSS, Bootstrap, JavaScript (VueJS), PHP, SQL</p>
+                            <p>Environnement : HTML, CSS, Bootstrap, JavaScript (Vue.JS), PHP, SQL</p>
                         </div>
                     </div>
                     <div class="meta-img">

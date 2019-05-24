@@ -4,8 +4,15 @@ $color-green-vue: #42b883;
 $color-blue-vue: #35495E;
 $lightgrey: #f1f1f1;
 
+$color-blue-vue-tranparent: rgba(53, 73, 94, 0.800);
+
 $white: #ffffff;
 
 $tablet: 768px;
 $small-desktop: 1200px;
 $larg-desktop: 1440px;
+
+$easing : cubic-bezier(0.39, 1.52, .46, .92);
+$easing2: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$transition: 0.25s;
+$transition2: 0.35s;

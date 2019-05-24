@@ -31,10 +31,8 @@
                         width: auto;
                         border: 1px solid #ddd;
                         background-color: #fff;
-                        -webkit-box-shadow: 10px 14px 14px -12px rgba(0, 0, 0, 0.45);
-                        -moz-box-shadow: 10px 14px 14px -12px rgba(0, 0, 0, 0.45);
-                        box-shadow: 10px 14px 14px -12px rgba(0, 0, 0, 0.45);
                         padding: 2rem;
+                        @include shadow-box();
                         .article-number {
                             display: flex;
                             justify-content: flex-start;
