@@ -52,6 +52,43 @@
     }
 }
 
+@mixin button-back-style() {
+  width: fit-content;
+  margin: 1rem auto;
+  border: 2px solid $color-green-vue;
+  border-radius: 20px;
+  padding: .5rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+
+  a {
+    .icon {
+      margin: 0 0 0 0.3rem;
+    }
+  }
+
+  &::before {
+    position: relative;
+    right: 0;
+    content: "\276e";
+    transition: all 0.3s linear;
+  }
+
+  &:hover {
+    &:before {
+      right: 5px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+  }
+}
+
 @mixin shadow-box() {
     -webkit-box-shadow: 10px 14px 14px -12px rgba(0, 0, 0, 0.45);
     -moz-box-shadow: 10px 14px 14px -12px rgba(0, 0, 0, 0.45);

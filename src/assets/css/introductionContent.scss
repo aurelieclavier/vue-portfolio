@@ -17,8 +17,8 @@
                 width: 80%;
             }
         }
-        .button {
-            @include button-style();
+        .backButton {
+            @include button-back-style();
             @media screen and (min-width: $tablet) {
                 margin: 0 auto;
             }

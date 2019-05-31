@@ -25,7 +25,9 @@
             animation: stroke-offset 8s infinite;
             -webkit-animation: stroke-offset 8s infinite;
         }
-        .job {
+        .job,
+        .title,
+        .content {
             font-size: 4rem;
             fill: $color-blue-vue;
             stroke: $color-green-vue;
