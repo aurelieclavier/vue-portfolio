@@ -14,15 +14,6 @@
                         </router-link>
                     </div>
                 </li>
-                <!-- <li>
-                    <div class="container">
-                        <a href="#">
-                            <h6 class="caption">Logiciel de gestion d'événement</h6>
-                            <img src="../assets/img/projetangular.jpg"/>
-                            <div class="overlay-img"></div>
-                        </a>
-                    </div>
-                </li> -->
             </ul>
         </section>
     </section>
@@ -36,15 +27,15 @@ export default {
             items: [
                 {
                     id: 0,
-                    link: '/Project',
+                    link: '/ProjectPolygonal',
                     title: 'Polygonal-Design',
-                    img: require('../assets/img/polygonal.jpg')
+                    img: require('../assets/img/job/polygonal/polygonal.jpg')
                 },
                 {
                     id: 1,
                     link: '/ProjectAngular',
                     title: 'Logiciel de gestion d\'événement',
-                    img: require('../assets/img/projetangular.jpg')
+                    img: require('../assets/img/job/angular/projetangular.jpg')
                 }
             ]
         }

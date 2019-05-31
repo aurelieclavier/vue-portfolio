@@ -39,6 +39,9 @@ export default {
     'SkillsComponent'       : SkillsComponent,
     'ExperienceComponent'   : ExperienceComponent,
     'ProjectComponent'      : ProjectComponent
-  }
+  },
+  mounted: function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
 }
 </script>

@@ -17,7 +17,7 @@ import SkillsComponent from './components/Skills.vue'
 import ExperienceComponent from './components/Experience.vue'
 import ProjectComponent from './components/Project.vue'
 import ProjectAngularComponent from './components/ProjectAngular.vue'
-import PolygonalDesignComponent from './components/PolygonalDesign.vue'
+import ProjectPolygonalComponent from './components/ProjectPolygonal.vue'
 import FooterComponent from './components/Footer.vue'
 
 export default {
@@ -30,7 +30,7 @@ export default {
     SkillsComponent,
     ExperienceComponent,
     ProjectComponent,
-    PolygonalDesignComponent,
+    ProjectPolygonalComponent,
     ProjectAngularComponent,
     FooterComponent
   },

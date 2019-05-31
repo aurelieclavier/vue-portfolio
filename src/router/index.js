@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '@/pages/Home'
-import PolygonalDesign from '@/pages/PolygonalDesign'
+import ProjectPolygonal from '@/pages/ProjectPolygonal'
 import ProjectAngular from '@/pages/ProjectAngular'
 import IntroductionPage from '@/pages/Introduction'
 
@@ -20,9 +20,9 @@ export default new Router({
             component: IntroductionPage
         },
         {
-            path: '/project',
-            name: 'PolygonalPage',
-            component: PolygonalDesign
+            path: '/projectPolygonal',
+            name: 'ProjectPolygonalPage',
+            component: ProjectPolygonal
         },
         {
             path: '/projectAngular',

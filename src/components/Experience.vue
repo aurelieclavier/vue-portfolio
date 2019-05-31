@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="meta-img">
-                        <img src="../assets/img/jaguarnetwork.png" alt="#">
+                        <img src="../assets/img/job/jaguarnetwork.png" alt="#">
                     </div>
                 </div>
                 <!-- // Article -->
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="meta-img">
-                        <img src="../assets/img/logoSmile.png" alt="#">
+                        <img src="../assets/img/job/logoSmile.png" alt="#">
                     </div>
                 </div>
                 <!-- // Article -->
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="meta-img">
-                        <img src="../assets/img/logoPolygonal.png" alt="#" class="polygonal">
+                        <img src="../assets/img/job/polygonal/logoPolygonal.png" alt="#" class="polygonal">
                     </div>
                 </div>
                 <!-- // Article -->
