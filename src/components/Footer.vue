@@ -3,7 +3,7 @@
         <section id="cv">
             <article class="major">
                 <h2>Mon CV</h2>
-                <a href="files/CV.pdf" target="_blank">
+                <a href="files/cv.pdf" target="_blank">
                     <font-awesome-icon prefix="fa" icon="file-pdf" class="icon icon-file-text"/>
                 </a>
             </article>

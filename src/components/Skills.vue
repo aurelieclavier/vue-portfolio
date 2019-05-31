@@ -52,7 +52,7 @@ export default {
                     ],
                 },
                 {
-                    id: 2,
+                    id: 1,
                     icon: 'cogs',
                     classIcon: 'icon icon-cogs',
                     h3: 'Frameworks / CMS',
@@ -81,7 +81,7 @@ export default {
                     ],
                 },
                 {
-                    id: 3,
+                    id: 2,
                     icon: 'plus',
                     classIcon: 'icon icon-plus',
                     h3: 'Librairies',
@@ -114,7 +114,7 @@ export default {
                     ],
                 },
                 {
-                    id: 4,
+                    id: 3,
                     icon: 'wrench',
                     classIcon: 'icon icon-wrench',
                     h3: 'Outils',

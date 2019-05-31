@@ -22,6 +22,9 @@ export default {
   components: {
     'IntroductionHeaderComponent'   : IntroductionHeaderComponent,
     'IntroductionContentComponent'  : IntroductionContentComponent
-  }
+  },
+  mounted: function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
 }
 </script>
