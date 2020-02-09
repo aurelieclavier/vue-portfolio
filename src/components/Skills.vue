@@ -5,8 +5,8 @@
         </header>
         <ul class="features">
             <li v-for="item in items" :key="item.id">
-                <div>
-                    <font-awesome-icon prefix="fa" v-bind:icon="item.icon" v-bind:class="item.classIcon"/>
+                <div class="img-skills">
+                    <img :src="item.image"/>                
                 </div>
                 <h3>{{ item.h3 }}</h3>
                 <div class="featuresDetail">
@@ -25,9 +25,8 @@ export default {
             items: [
                 {
                     id: 0,
-                    icon: 'code',
-                    classIcon: 'icon icon-code',
-                    h3: 'Languages',
+                    image : [require("../assets/img/data.png")],
+                    h3: 'Langages',
                     text: [
                         {
                             id: 0,
@@ -53,12 +52,11 @@ export default {
                 },
                 {
                     id: 1,
-                    icon: 'cogs',
-                    classIcon: 'icon icon-cogs',
-                    h3: 'Frameworks / CMS',
+                    image : [require("../assets/img/rocket.png")],
+                    h3: 'Frameworks',
                     text: [
                         {
-                            id: 0,
+                            id: 0, 
                             label: 'VueJs'
                         },
                         {
@@ -82,9 +80,8 @@ export default {
                 },
                 {
                     id: 2,
-                    icon: 'plus',
-                    classIcon: 'icon icon-plus',
-                    h3: 'Librairies',
+                    image : [require("../assets/img/fix.png")],
+                    h3: 'Outils',
                     text: [
                         {
                             id: 0,
@@ -111,42 +108,6 @@ export default {
                             label: 'JQuery'
                         }
 
-                    ],
-                },
-                {
-                    id: 3,
-                    icon: 'wrench',
-                    classIcon: 'icon icon-wrench',
-                    h3: 'Outils',
-                    text: [
-                        {
-                            id: 0,
-                            label: 'MySQL Workbench'
-                        },
-                        {
-                            id: 1,
-                            label: 'Git'
-                        },
-                        {
-                            id: 2,
-                            label: 'GitLab'
-                        },
-                        {
-                            id: 3,
-                            label: 'Mercurial'
-                        },
-                        {
-                            id: 4,
-                            label: 'Gescom'
-                        },
-                        {
-                            id: 5,
-                            label: 'Redmine'
-                        },
-                        {
-                            id: 6,
-                            label: 'Photoshop'
-                        },
                     ],
                 }
             ]
