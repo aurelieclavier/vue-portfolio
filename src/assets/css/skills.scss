@@ -10,6 +10,7 @@
                 flex-wrap: nowrap;
             }
             li {
+                margin: 2rem 0;
                 @media screen and (min-width: $tablet) {
                     float: left;
                     width: 45%;
@@ -17,23 +18,14 @@
                 @media screen and (min-width: $small-desktop) {
                     width: 23%;
                 }
-                div {
-                    display: flex;
-                    padding: .5rem;
-                    border-radius: 100%;
-                    border: 1px solid lightgrey;
-                    margin: 1rem auto;
-                    width: fit-content;
-                    height: fit-content;
-                    .icon{
-                        color: $color-blue-vue;
-                        width: 100px;
-                        height: 100px;
-                        border: 1px solid lightgray;
-                        border-radius: 100%;
-                        padding: 1rem;
-                        &-code,&-plus{
-                            color: $color-green-vue;
+                .img-skills{
+                    width: 40%;
+                    height: auto;
+                    margin: 0 auto;
+                    img {
+                        width: 50%;
+                        @media screen and (min-width: $tablet) {
+                            width: 100%;
                         }
                     }
                 }
