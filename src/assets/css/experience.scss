@@ -23,22 +23,22 @@
                 overflow: hidden;
                 margin: 20px 0;
                 .content-left-container, .content-right-container {
-                    max-width: 44%;
+                    max-width: 43%;
                     width: 100%;
-                    margin: 1rem .5rem;
+                    margin: 1rem 0;
                     .content-left, .content-right {
                         position: relative;
                         width: auto;
                         border: 1px solid #ddd;
                         background-color: #fff;
-                        padding: 2rem;
+                        padding: 1rem;
                         @include shadow-box();
                         .article-number {
                             display: flex;
-                            justify-content: flex-start;
+                            justify-content: center;
                             text-transform: uppercase;
                             font-size: 1.2rem;
-                            font-weight: 600;
+                            font-weight: bold;
                             color: $color-green-vue;
                         }
                         .article-title {
@@ -66,6 +66,7 @@
                             font-size: 14px;
                             line-height: 24px;
                             position: relative;
+                            line-height: 1.2;
                         }
                         .content-left:before, .content-right:before {
                             position: absolute;
@@ -96,9 +97,18 @@
                         position: relative;
                         top: 50%;
                         transform: translate(0, -50%);
-                    }
-                    .polygonal {
-                      width: 70%;
+                        &.reduc-img-seventy{
+                            width: 70%;
+                        }
+                        &.reduc-img-seventy-five{
+                            width: 75%;
+                        }
+                        &.reduc-img-heighty{
+                            width: 80%;
+                        }
+                        &.academy{
+                            top: 2rem;
+                        }
                     }
                 }
             }
