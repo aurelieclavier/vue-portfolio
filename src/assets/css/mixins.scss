@@ -94,3 +94,9 @@
     -moz-box-shadow: 10px 14px 14px -12px rgba(0, 0, 0, 0.45);
     box-shadow: 10px 14px 14px -12px rgba(0, 0, 0, 0.45);
 }
+
+@mixin img-border-radius {
+  border: 1px solid lightgrey;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
