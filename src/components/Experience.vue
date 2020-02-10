@@ -8,71 +8,59 @@
             <!-- <div class="timeline-start">Start</div> -->
             <div class="conference-center-line"></div>
             <div class="conference-timeline-content">
-                <!-- Article -->
-                <div class="timeline-article">
-                    <div class="content-left-container">
-                        <div class="content-left">
-                            <span class="article-number">mars 2019 à avril 2019</span>
-                            <span class="article-title">jaguar-network - développeuse full-stack</span>
-                            <ul>
-                                <li>Développement de nouvelles fonctionnalités</li>
-                                <li>Maintenance corrective et évolutive de l'intranet</li>
-                                <li>Création de méthodes dans le webservice SOAP</li>
-                                <li>Création de procédures stockées SQL</li>
-                                <li>Conception et ajout de tables au schéma de données</li>
-                                <li>Formation PLSQL et Perl</li>
-                            </ul>
-                            <p>Environnement : PLSQL, Perl, PHP (Khoana), Twig, Vue.JS, Sass, Debian</p>
-                        </div>
+
+                <!-- <div class="timeline-article">
+                    
                     </div>
-                    <div class="meta-img">
-                        <img src="../assets/img/job/jaguarnetwork.png" alt="#">
-                    </div>
-                </div>
+                </div> -->
                 <!-- // Article -->
                 <!-- Article -->
-                <div class="timeline-article">
+                <!-- <div class="timeline-article">
                     <div class="content-right-container">
                         <div class="content-right">
-                            <span class="article-number">avril 2018 à juin 2018</span>
-                            <span class="article-title">smile - développeuse front-end</span>
-                            <ul>
-                                <li>Analyser les besoins du client</li>
-                                <li>Integréation de la charte graphique</li>
-                                <li>Intégration des maquettes responsives HTML 5 / Less / JavaScript</li>
-                                <li>Respecter les bonnes pratiques de développement</li>
-                            </ul>
-                            <p>Environnement : Magento 2 , Symfony 3 et 4, HTML, Less, Slick, Linux</p>
-                        </div>
+                            lt="#" class="polygonal">
                     </div>
-                    <div class="meta-img">
-                        <img src="../assets/img/job/logoSmile.png" alt="#">
-                    </div>
-                </div>
+                </div> -->
                 <!-- // Article -->
                 <!-- Article -->
-                <div class="timeline-article">
+                <!-- <div class="timeline-article">
                     <div class="content-left-container">
                         <div class="content-left">
-                            <span class="article-number">mars 2019 à avril 2019</span>
-                            <span class="article-title">polygonal-design - développeuse full-stack (stage)</span>
+                            <span class="article-number">octobre 2017 à décembre 2017</span>
+                            <span class="article-title">3w academy - formation développeuse web</span>
                             <ul>
-                                <li>Proposer et choisir la charte graphique</li>
-                                <li>Réaliser des maquettes responsives HTML 5 / CSS 3</li>
-                                <li>Optimiser la structuration des pages pour le référencement</li>
-                                <li>Concevoir la base de donnée MySQL</li>
-                                <li>Réécrire me code de l'application (PHP, Vue.JS)</li>
-                                <li>Respecter les bonnes pratiques de développpement</li>
-                                <li>Créer des visuels sous Photoshop pour l'application</li>
+                                <li>Initiation aux différents langages du web</li>
+                                <li>Mise en pratique via différents exercices</li>
                             </ul>
-                            <p>Environnement : HTML, CSS, Bootstrap, JavaScript (Vue.JS), PHP, SQL</p>
+                            <p>Environnement : {{ items.stack }}</p>
                         </div>
                     </div>
                     <div class="meta-img">
-                        <img src="../assets/img/job/polygonal/logoPolygonal.png" alt="#" class="polygonal">
+                        <img src="../assets/img/formations/3wa.png" alt="3W Academy" class="academy">
+                    </div>
+                </div> -->
+                <!-- // Article -->
+
+
+                <div v-for="item in items" :key="item.id" class="timeline-article">
+                    <div v-bind:class="item.class">
+                        <div v-bind:class="item.subClass">
+                            <span class="article-number">{{ item.articleNumber }}</span>
+                            <span class="article-title">{{ item.articleTitle }}</span>
+                            <ul v-for="exp in item.details" v-bind:key="exp.id">
+                                <li>{{ exp.text }}</li>
+                            </ul>
+                            <p>Environnement : {{ item.stack }}</p>
+                        </div>
+                    </div>
+                    <div class="meta-img">
+                        <img :src="item.image" :alt="item.altImage" v-bind:class="item.classImage">
                     </div>
                 </div>
-                <!-- // Article -->
+
+
+
+
             </div>
         </section>
         <!-- // Vertical Timeline -->
@@ -81,7 +69,236 @@
 
 <script>
 export default {
-    name: 'ExperienceComponent'
+    name: 'ExperienceComponent',
+    data () {
+        return {
+            items: [
+                {
+                    id: 0,
+                    class: "content-left-container",
+                    subClass: "content-left",
+                    articleNumber: "décembre 2019 à aujourdhui",
+                    articleTitle: "Gestion de collection de cartes - Projet personnel",
+                    details: [
+                        {
+                            id: 0,
+                            text: "Conception des différents diagrammes UML à l’aide de StarUML"
+                        },
+                        {
+                            id: 1,
+                            text: "Utilisation de la méthode MERISE pour la conception de la base de données MySQL"
+                        },
+                        {
+                            id: 2,
+                            text: "Conception de la base de données"
+                        },
+                        {
+                            id: 3,
+                            text: "Implémentation d’une API Rest"
+                        },
+                        {
+                            id: 4,
+                            text: "Conception et développement du backend Java Spring"
+                        },
+                        {
+                            id: 5,
+                            text: "Prise en compte des compatibilités cross-navigateurs"
+                        }
+                    ],
+                    stack: "Java Spring Boot, Hibernate, Angular 8, SCSS, Git",
+                    image: [require("../assets/img/job/pokemon.png")],
+                    altImage: "Pokémon card",
+                    classImage: "reduc-img-seventy"
+                },
+                {
+                    id: 1,
+                    class: "content-right-container",
+                    subClass: "content-right",
+                    articleNumber: "octobre 2019 à novembre 2019",
+                    articleTitle: "quiz'actu - projet de formation",
+                    details: [
+                        {
+                            id: 0,
+                            text: "Analyse des besoins du client"
+                        },
+                        {
+                            id: 1,
+                            text: "Utilisation de la méthodologie Agile SCRUM"
+                        },
+                        {
+                            id: 2,
+                            text: "Réalisation d’un prototype de la solution pour validation par le client"
+                        },
+                        {
+                            id: 3,
+                            text: "Conception des différents diagrammes UML à l’aide de StarUML"
+                        },
+                        {
+                            id: 4,
+                            text: "Utilisation de la méthode MERISE pour la conception de la base de données MySQL"
+                        },
+                        {
+                            id: 5,
+                            text: "Conception de la base de données"
+                        },
+                        {
+                            id: 6,
+                            text: "Conception et développement de l’application web"
+                        },
+                        {
+                            id: 7,
+                            text: "Prise en compte des compatibilités cross-navigateurs"
+                        }
+                    ],
+                    stack: "Java Spring Boot, Hibernate, Thymeleaf, Bootstrap, JQuery, Ajax, CSS, Balsamiq, Git",
+                    image: [require("../assets/img/job/quizactu.png")],
+                    altImage: "Quiz'actu",
+                    classImage: "reduc-img-seventy-five"
+                },
+                {
+                    id: 3,
+                    class: "content-left-container",
+                    subClass: "content-left",
+                    articleNumber: "septembre 2019 à novembre 2019",
+                    articleTitle: "wild code school - formation développeuse java jee",
+                    details: [
+                        {
+                            id: 0,
+                            text: "Formation au langage Java JSE et JEE"
+                        },
+                        {
+                            id: 1,
+                            text : "Formation au framework Spring"
+                        },
+                        {
+                            id: 2,
+                            text: "Utilisation de l'API Rest"
+                        },
+                        {
+                            id: 3,
+                            text: "Participation au hackathon du Frioul"
+                        },
+                        {
+                            id: 4,
+                            text: "Participation à un hackathon en interne"
+                        }
+                    ],
+                    stack: "Java JSE et JEE, Spring Boot, Hibernate, Thymeleaf",
+                    image: [require("../assets/img/formations/wcs.png")],
+                    altImage: "Wild code school",
+                    classImage: "reduc-img-seventy-five"
+                },
+                {
+                    id: 4,
+                    class: "content-right-container",
+                    subClass: "content-right",
+                    articleNumber: "mars 2019 à avril 2019",
+                    articleTitle: "jaguar-network - développeuse full-stack",
+                    details: [
+                        {
+                            id: 0,
+                            text : "Maintenance corrective et évolutive de l'intranet"
+                        },
+                        {
+                            id: 1,
+                            text: "Conception et développement de nouvelles fonctionnalités"
+                        },
+                        {
+                            id: 2,
+                            text: "Intégration d’un web service SOAP"
+                        }
+                    ],
+                    stack: "PLSQL, Perl, PHP (Khoana), Twig, Vue.JS, Sass, Debian",
+                    image: [require("../assets/img/job/jaguarnetwork.png")],
+                    altImage: "Jaguar-network",
+                    classImage: ""
+                },
+                {
+                    id: 5,
+                    class: "content-left-container",
+                    subClass: "content-left",
+                    articleNumber: "avril 2018 à juin 2018",
+                    articleTitle: "smile - développeuse front-end",
+                    details: [
+                        {
+                            id: 0,
+                            text: "Maintenance corrective et évolutive d’un site e-commerce Magento 2"
+                        },
+                        {
+                            id: 1,
+                            text : "Intégration d’une maquette HTML, CSS pour le client"
+                        }
+                    ],
+                    stack: "Magento 2 , Symfony 3 et 4, HTML, Less, Slick, Linux",
+                    image: [require("../assets/img/job/logoSmile.png")],
+                    altImage: "Smile",
+                    classImage: ""
+                },
+                {
+                    id: 6,
+                    class: "content-right-container",
+                    subClass: "content-right",
+                    articleNumber: "mars 2019 à avril 2019",
+                    articleTitle: "polygonal-design - développeuse full-stack (stage)",
+                    details: [
+                        {
+                            id: 0,
+                            text : "Analyse des besoins du client"
+                        },
+                        {
+                            id: 1,
+                            text: "Réalisation d’un prototype de la solution pour validation par le client"
+                        },
+                        {
+                            id: 2,
+                            text: "Conception de la base de données"
+                        },
+                        {
+                            id: 3,
+                            text: "Conception et développement de l’application web"
+                        },
+                        {
+                            id: 4,
+                            text: "Prise en compte des compatibilités cross-navigateurs"
+                        },
+                        {
+                            id: 5,
+                            text: "Mise en place d’une solution de paiement"
+                        },
+                        {
+                            id: 6,
+                            text: "Configuration de l’hébergement"
+                        }
+
+                    ],
+                    stack: "HTML, CSS, Bootstrap, JavaScript (Vue.JS), PHP, SQL",
+                    image: [require("../assets/img/job/polygonal/logoPolygonal.png")],
+                    altImage: "Polygonal Design",
+                    classImage: "reduc-img-seventy"
+                },
+                {
+                    id: 7,
+                    class: "content-left-container",
+                    subClass: "content-left",
+                    articleNumber: "octobre 2017 à décembre 2017",
+                    articleTitle: "3w academy - formation développeuse web",
+                    details: [
+                        {
+                            id: 0,
+                            text: "Initiation aux différents langages du web"
+                        },
+                        {
+                            id: 1,
+                            text : "Mise en pratique via différents exercices"
+                        }
+                    ],
+                    stack: "HTML, CSS, Bootstrap, JavaScript, PHP, SQL",
+                    image: [require("../assets/img/formations/3wa.png")],
+                    altImage: "3W Academy",
+                    classImage: "academy reduc-img-seventy"
+                }
+            ]
+        }
+    }
 }
 </script>
-
