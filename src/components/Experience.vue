@@ -3,45 +3,9 @@
         <header class="major">
             <h2>Mes expériences</h2>
         </header>
-        <!-- Vertical Timeline -->
         <section id="conference-timeline">
-            <!-- <div class="timeline-start">Start</div> -->
             <div class="conference-center-line"></div>
             <div class="conference-timeline-content">
-
-                <!-- <div class="timeline-article">
-                    
-                    </div>
-                </div> -->
-                <!-- // Article -->
-                <!-- Article -->
-                <!-- <div class="timeline-article">
-                    <div class="content-right-container">
-                        <div class="content-right">
-                            lt="#" class="polygonal">
-                    </div>
-                </div> -->
-                <!-- // Article -->
-                <!-- Article -->
-                <!-- <div class="timeline-article">
-                    <div class="content-left-container">
-                        <div class="content-left">
-                            <span class="article-number">octobre 2017 à décembre 2017</span>
-                            <span class="article-title">3w academy - formation développeuse web</span>
-                            <ul>
-                                <li>Initiation aux différents langages du web</li>
-                                <li>Mise en pratique via différents exercices</li>
-                            </ul>
-                            <p>Environnement : {{ items.stack }}</p>
-                        </div>
-                    </div>
-                    <div class="meta-img">
-                        <img src="../assets/img/formations/3wa.png" alt="3W Academy" class="academy">
-                    </div>
-                </div> -->
-                <!-- // Article -->
-
-
                 <div v-for="item in items" :key="item.id" class="timeline-article">
                     <div v-bind:class="item.class">
                         <div v-bind:class="item.subClass">
@@ -57,13 +21,8 @@
                         <img :src="item.image" :alt="item.altImage" v-bind:class="item.classImage">
                     </div>
                 </div>
-
-
-
-
             </div>
         </section>
-        <!-- // Vertical Timeline -->
     </section>
 </template>
 
