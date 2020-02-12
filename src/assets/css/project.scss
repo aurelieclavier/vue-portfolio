@@ -3,13 +3,18 @@
         width: 100%;
         ul {
             display: flex;
-            justify-content: space-between;
-            flex-flow: wrap;
+            flex-direction: column;
+            @media screen and (min-width: $tablet) {
+                justify-content: center;
+                flex-flow: wrap;
+            }
+            
             li {
-                display: inline-block;
-                height: fit-content;
-                width: 45%;
-                margin: .5rem 0;
+                width: 100%;
+                @media screen and (min-width: $tablet) {
+                    width: 50%;
+                    margin: .5rem 0;
+                }
                 .container {
                     position: relative;
                     margin: 5px;
@@ -47,6 +52,10 @@
                             overflow: hidden;
                             transform: skew(-45deg) scaleX(0);
                             transition: all $transition $easing2;
+                        }
+                        .pokeball{
+                            height: 162px;
+                            width: auto;
                         }
                     }
                     &:hover {

@@ -1,22 +1,19 @@
 #header {
-   height: calc(100vh - 10rem);
+//    height: calc(100vh - 10rem);
    font-family: 'Lobster Two', cursive;
     svg {
-        width: 700px;
+        width: 100%;
         height: auto;
         margin: 0 auto;
         display: block;
         position: relative;
         z-index: 3;
         &:first-child {
-            margin-top: 10rem;
-        }
-        &:last-child {
-            margin-top: 3rem;
+            margin-top: 5rem;
         }
         .name {
             letter-spacing: 0.4rem;
-            font-size: 10rem;
+            font-size: 7rem;
             fill: $color-blue-vue;
             stroke: $color-green-vue;
             fill-opacity: 1;
@@ -28,7 +25,7 @@
         .job,
         .title,
         .content {
-            font-size: 4rem;
+            font-size: 3rem;
             fill: $color-blue-vue;
             stroke: $color-green-vue;
             fill-opacity: 1;
