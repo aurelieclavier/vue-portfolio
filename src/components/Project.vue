@@ -44,7 +44,7 @@ export default {
                     link: '/ProjectPokemon',
                     title: 'Collection de cartes',
                     class: 'pokeball',
-                    img: require('../assets/img/job/pokemon/pokemon.png')
+                    img: require('../assets/img/job/pokemon/pokeball.jpg')
                 }
             ]
         }

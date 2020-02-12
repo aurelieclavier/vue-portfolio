@@ -10,7 +10,6 @@
             }
             
             li {
-                width: 100%;
                 @media screen and (min-width: $tablet) {
                     width: 50%;
                     margin: .5rem 0;
@@ -53,9 +52,12 @@
                             transform: skew(-45deg) scaleX(0);
                             transition: all $transition $easing2;
                         }
-                        .pokeball{
-                            height: 162px;
+                        img {
+                            height: 160px;
                             width: auto;
+                            @media screen and (min-width: $small-desktop) {
+                                height: 200px;
+                            }
                         }
                     }
                     &:hover {
