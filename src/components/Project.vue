@@ -9,7 +9,7 @@
                     <div class="container">
                         <router-link :to="item.link">
                             <h6 class="caption">{{ item.title }}</h6>
-                            <img v-bind:src="item.img"/>
+                            <img v-bind:src="item.img" :class="item.class"/>
                             <div class="overlay-img"></div>
                         </router-link>
                     </div>
@@ -29,18 +29,21 @@ export default {
                     id: 0,
                     link: '/ProjectPolygonal',
                     title: 'Polygonal-Design',
+                    class: '',
                     img: require('../assets/img/job/polygonal/polygonal.jpg')
                 },
                 {
                     id: 1,
                     link: '/ProjectQuizActu',
                     title: 'Quiz sur l\'actualité du jour',
+                    class: '',
                     img: require('../assets/img/job/quizactu/login.jpg')
                 },
                 {
                     id: 2,
                     link: '/ProjectPokemon',
                     title: 'Collection de cartes',
+                    class: 'pokeball',
                     img: require('../assets/img/job/pokemon/pokemon.png')
                 }
             ]
