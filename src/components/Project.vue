@@ -33,9 +33,15 @@ export default {
                 },
                 {
                     id: 1,
-                    link: '/ProjectAngular',
-                    title: 'Logiciel de gestion d\'événement',
-                    img: require('../assets/img/job/angular/projetangular.jpg')
+                    link: '/ProjectQuizActu',
+                    title: 'Quiz sur l\'actualité du jour',
+                    img: require('../assets/img/job/quizactu/login.jpg')
+                },
+                {
+                    id: 2,
+                    link: '/ProjectPokemon',
+                    title: 'Collection de cartes',
+                    img: require('../assets/img/job/pokemon/pokemon.png')
                 }
             ]
         }

@@ -16,8 +16,9 @@ import AboutComponent from './components/About.vue'
 import SkillsComponent from './components/Skills.vue'
 import ExperienceComponent from './components/Experience.vue'
 import ProjectComponent from './components/Project.vue'
-import ProjectAngularComponent from './components/ProjectAngular.vue'
 import ProjectPolygonalComponent from './components/ProjectPolygonal.vue'
+import ProjectQuizActuComponent from './components/ProjectQuizActu.vue'
+import ProjectPokemonComponent from './components/ProjectPokemon.vue'
 import FooterComponent from './components/Footer.vue'
 
 export default {
@@ -31,7 +32,8 @@ export default {
     ExperienceComponent,
     ProjectComponent,
     ProjectPolygonalComponent,
-    ProjectAngularComponent,
+    ProjectQuizActuComponent,
+    ProjectPokemonComponent,
     FooterComponent
   },
   data() {

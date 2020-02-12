@@ -65,7 +65,7 @@ export default {
                         }
                     ],
                     stack: "Java Spring Boot, Hibernate, Angular 8, SCSS, Git",
-                    image: [require("../assets/img/job/pokemon.png")],
+                    image: [require("../assets/img/job/pokemon/pokemon.png")],
                     altImage: "Pokémon card",
                     classImage: "reduc-img-seventy"
                 },
@@ -110,7 +110,7 @@ export default {
                         }
                     ],
                     stack: "Java Spring Boot, Hibernate, Thymeleaf, Bootstrap, JQuery, Ajax, CSS, Balsamiq, Git",
-                    image: [require("../assets/img/job/quizactu.png")],
+                    image: [require("../assets/img/job/quizactu/quizactu.png")],
                     altImage: "Quiz'actu",
                     classImage: "reduc-img-seventy-five"
                 },

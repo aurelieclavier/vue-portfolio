@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '@/pages/Home'
 import ProjectPolygonal from '@/pages/ProjectPolygonal'
-import ProjectAngular from '@/pages/ProjectAngular'
+import ProjectQuizActu from '@/pages/ProjectQuizActu'
+import ProjectPokemon from '@/pages/ProjectPokemon'
 import IntroductionPage from '@/pages/Introduction'
 
 Vue.use(Router)
@@ -25,9 +26,14 @@ export default new Router({
             component: ProjectPolygonal
         },
         {
-            path: '/projectAngular',
-            name: 'ProjectAngularPage',
-            component: ProjectAngular
+            path: '/projectQuizActu',
+            name: 'ProjectQuizActuPage',
+            component: ProjectQuizActu
+        },
+        {
+            path: '/projectPokemon',
+            name: 'ProjectPokemonPage',
+            component: ProjectPokemon
         }
     ]
 })
