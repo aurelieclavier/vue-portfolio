@@ -27,4 +27,11 @@
             @include style-h2();
         }
     }
+    .text-color{
+        color: $color-green-vue;
+        font-weight: bold;
+    }
+    .link{
+        text-decoration: underline;
+    }
 }
