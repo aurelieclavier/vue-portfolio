@@ -30,24 +30,28 @@ export default {
                     text: [
                         {
                             id: 0,
-                            label: 'HTML 5'
+                            label: 'Java JEE'
                         },
                         {
                             id: 1,
-                            label: 'CSS 3'
+                            label: 'Javascript'
                         },
                         {
                             id: 2,
-                            label: 'JavaScript'
+                            label: 'SQL'
                         },
                         {
                             id: 3,
-                            label: 'PHP 7'
+                            label: 'PHP'
                         },
                         {
                             id: 4,
-                            label: 'SQL'
+                            label: 'HTML'
                         },
+                        {
+                            id: 5,
+                            label: 'CSS'
+                        }
                     ],
                 },
                 {
@@ -57,23 +61,23 @@ export default {
                     text: [
                         {
                             id: 0, 
-                            label: 'VueJs'
+                            label: 'Spring'
                         },
                         {
                             id: 1,
-                            label: 'Angular 2+'
+                            label: 'Hibernate'
                         },
                         {
                             id: 2,
-                            label: 'Ionic'
+                            label: 'VueJS'
                         },
                         {
                             id: 3,
-                            label: 'Symfony 3'
+                            label: 'Angular 2+'
                         },
                         {
                             id: 4,
-                            label: 'Wordpress'
+                            label: 'Ionic'
                         },
 
                     ],
@@ -85,19 +89,19 @@ export default {
                     text: [
                         {
                             id: 0,
-                            label: 'Materialize'
+                            label: 'Eclipse'
                         },
                         {
                             id: 1,
-                            label: 'Material Design'
+                            label: 'Maven'
                         },
                         {
                             id: 2,
-                            label: 'Sass'
+                            label: 'MySQL Workbench'
                         },
                         {
                             id: 3,
-                            label: 'Less'
+                            label: 'Git'
                         },
                         {
                             id: 4,

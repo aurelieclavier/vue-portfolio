@@ -1,10 +1,8 @@
 <template>
-  <header id="header" class="alt">
+  <header id="header">
     <svg>
-      <text text-anchor="middle" x="50%" y="90%" class="name">{{ name }}</text>
-    </svg>
-    <svg>
-      <text text-anchor="middle" x="50%" y="50%" class="job">{{ job }}</text>
+      <text text-anchor="middle" x="50%" y="50%" class="title">{{ name }}</text>
+      <text text-anchor="middle" x="50%" y="100%" class="detail">{{ job }}</text>
     </svg>
   </header>
 </template>

@@ -5,9 +5,9 @@
                 :id="link.id" 
                 :class="{ active : active_el == link.active_el }" 
                 class="nav-link">
-                <a v-bind:href="link.href" 
-                @click="link.click" 
-                v-smooth-scroll="{ duration: 1000, offset: -50}">
+                <a v-bind:href="link.anchor" 
+                    @click="activate(link.id)" 
+                    v-smooth-scroll="{ duration: 1000, offset: -50}">
                     {{ link.content }}
                 </a>
             </li>
@@ -25,36 +25,25 @@ export default {
                 {
                     id : 1,
                     active_el: 1,
-                    click : "activate(1)",
-                    href: "#intro",
+                    anchor: "#intro",
                     content: "Introduction"
                 },
                 {
                     id: 2,
                     active_el: 2,
-                    click : "activate(2)",
-                    href: "#skills",
+                    anchor: "#skills",
                     content: "Compétences"
                 },
                 {
                     id: 3,
                     active_el: 3,
-                    click : "activate(3)",
-                    href: "#exp",
+                    anchor: "#exp",
                     content: "Expériences"
                 },
                 {
                     id: 4,
-                    active_el: 4,
-                    click : "activate(4)",
-                    href: "#project",
-                    content: "Projets"
-                },
-                {
-                    id: 5,
                     active_el: 5,
-                    click : "activate(5)",
-                    href: "#contact",
+                    anchor: "#contact",
                     content: "Contact"
                 },
             ]

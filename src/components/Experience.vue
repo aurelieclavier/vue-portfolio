@@ -36,7 +36,44 @@ export default {
                     id: 0,
                     class: "content-left-container",
                     subClass: "content-left",
-                    articleNumber: "décembre 2019 à aujourdhui",
+                    articleNumber: "mars 2020 à aujourd'hui",
+                    articleTitle: "Développeuse Full-satck - Exotismes",
+                    details: [
+                        {
+                            id: 0,
+                            text: "Développement d'une brochure dématérialiséee en JavaScript"
+                        },
+                        {
+                            id: 1,
+                            text: "Maintenance corrective et évolutive de l'intranet"
+                        },
+                        {
+                            id: 2,
+                            text: "Conception et développement de nouvelles fonctionnalités"
+                        },
+                        {
+                            id: 3,
+                            text: "Conception et développement du backend Java JEE"
+                        },
+                        {
+                            id: 4,
+                            text: "Maintenance corrective et évolutive d'une base de données PLSQL"
+                        },
+                        {
+                            id: 5,
+                            text: "Prise en compte des compatibilités cross-navigateurs"
+                        }
+                    ],
+                    stack: "PLSQL, Hibernate, Java JEE, JSF, JavaScript, CSS, Git",
+                    image: [require("../assets/img/job/exotismes.png")],
+                    altImage: "Pokémon card",
+                    classImage: "reduc-img-seventy"
+                },
+                {
+                    id: 1,
+                    class: "content-right-container",
+                    subClass: "content-right",
+                    articleNumber: "décembre 2019 à mars 2020",
                     articleTitle: "Gestion de collection de cartes - Projet personnel",
                     details: [
                         {
@@ -70,9 +107,9 @@ export default {
                     classImage: "reduc-img-seventy"
                 },
                 {
-                    id: 1,
-                    class: "content-right-container",
-                    subClass: "content-right",
+                    id: 2,
+                    class: "content-left-container",
+                    subClass: "content-left",
                     articleNumber: "octobre 2019 à novembre 2019",
                     articleTitle: "quiz'actu - projet de formation",
                     details: [
@@ -116,8 +153,8 @@ export default {
                 },
                 {
                     id: 3,
-                    class: "content-left-container",
-                    subClass: "content-left",
+                    class: "content-right-container",
+                    subClass: "content-right",
                     articleNumber: "septembre 2019 à novembre 2019",
                     articleTitle: "wild code school - formation développeuse java jee",
                     details: [
@@ -149,8 +186,8 @@ export default {
                 },
                 {
                     id: 4,
-                    class: "content-right-container",
-                    subClass: "content-right",
+                    class: "content-left-container",
+                    subClass: "content-left",
                     articleNumber: "mars 2019 à avril 2019",
                     articleTitle: "jaguar-network - développeuse full-stack",
                     details: [
@@ -174,8 +211,8 @@ export default {
                 },
                 {
                     id: 5,
-                    class: "content-left-container",
-                    subClass: "content-left",
+                    class: "content-right-container",
+                    subClass: "content-right",
                     articleNumber: "avril 2018 à juin 2018",
                     articleTitle: "smile - développeuse front-end",
                     details: [
@@ -195,8 +232,8 @@ export default {
                 },
                 {
                     id: 6,
-                    class: "content-right-container",
-                    subClass: "content-right",
+                    class: "content-left-container",
+                    subClass: "content-left",
                     articleNumber: "mars 2019 à avril 2019",
                     articleTitle: "polygonal-design - développeuse full-stack (stage)",
                     details: [
@@ -237,8 +274,8 @@ export default {
                 },
                 {
                     id: 7,
-                    class: "content-left-container",
-                    subClass: "content-left",
+                    class: "content-right-container",
+                    subClass: "content-right",
                     articleNumber: "octobre 2017 à décembre 2017",
                     articleTitle: "3w academy - formation développeuse web",
                     details: [

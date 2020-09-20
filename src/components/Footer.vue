@@ -28,24 +28,18 @@ export default {
             items: [
                 {
                     id: 0,
-                    link: "tel:+33651014007",
-                    image: [require("../assets/img/reseaux/call.png")],
-                    alt: "Téléphone Aurélie"
-                },
-                {
-                    id: 1,
                     link: "mailTo:c.aurelie.pro@gmail.com",
                     image: [require("../assets/img/reseaux/mail.png")],
                     alt: "Email Aurélie"
                 },
                 {
-                    id: 2,
+                    id: 1,
                     link: "https://www.linkedin.com/in/aurelieclavier/",
                     image: [require("../assets/img/reseaux/linkedin.png")],
                     alt: "Linkedin Aurélie"
                 },
                 {
-                    id: 3,
+                    id: 2,
                     link: "https://github.com/aurelieclavier",
                     image: [require("../assets/img/reseaux/github.png")],
                     alt: "Github Aurélie"
