@@ -1,0 +1,12 @@
+#wrapper {
+    #header {
+        #polygonal {
+            .title {
+                font-size: 3rem;
+                @media screen and (min-width: $small-desktop) {
+                  font-size: 10rem;
+                }
+            }
+        }
+    }
+}

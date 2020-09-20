@@ -34,7 +34,7 @@
                     }
                     .content-left, .content-right {
                         position: relative;
-                        width: auto;
+                        width: 95%;
                         border: 1px solid #ddd;
                         background-color: #fff;
                         padding: 1rem;
@@ -53,7 +53,7 @@
                             text-transform: uppercase;
                             font-style: italic;
                             font-size: .8rem;
-                            font-weight: 200;
+                            font-weight: normal;
                             color: $color-green-vue;
                         }
                         ul {
