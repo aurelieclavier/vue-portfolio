@@ -12,8 +12,6 @@
             <SkillsComponent></SkillsComponent>
             <!-- Experience -->
             <ExperienceComponent></ExperienceComponent>
-            <!-- Projets -->
-            <ProjectComponent></ProjectComponent>
         </main>
     </div>
 </template>
@@ -24,7 +22,6 @@ import NavComponent         from '../components/Nav'
 import AboutComponent       from '../components/About'
 import SkillsComponent      from '../components/Skills'
 import ExperienceComponent  from '../components/Experience'
-import ProjectComponent     from '../components/Project'
 export default {
   name: 'HomePage',
   data () {
@@ -37,8 +34,7 @@ export default {
     'NavComponent'          : NavComponent,
     'AboutComponent'        : AboutComponent,
     'SkillsComponent'       : SkillsComponent,
-    'ExperienceComponent'   : ExperienceComponent,
-    'ProjectComponent'      : ProjectComponent
+    'ExperienceComponent'   : ExperienceComponent
   },
   mounted: function(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
