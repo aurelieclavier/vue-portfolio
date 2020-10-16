@@ -112,7 +112,7 @@ export default {
                         {
                             id: 2,
                             text: `Pendant cette formation, nous avons développé en équipe une application 
-                            pour deux journalistes Marseillais qui souhaitaient \"gamifier\" l'information. 
+                            pour deux journalistes Marseillais qui souhaitaient "gamifier" l'information. 
                             Nous avons créé une <strong class='text-color'>
                             <a href='http://vps762572.ovh.net/login' target='_blank' class='link'>
                             QuizActu</a></strong> qui permet de jouer à des quiz sur l'actualité. 
@@ -120,7 +120,7 @@ export default {
                         },
                         {
                             id: 3,
-                            text: `<strong class='text-color'>Java a été pour moi un réel coup de cœur</strong>. 
+                            text: `<strong class='text-color'>Le développement a été pour moi un réel coup de cœur</strong>. 
                             Depuis le mois de mars, j'ai rejoint la société 
                             <strong class='text-color'><a href='https://www.exotismes.fr' target='_blank' class='link'>
                             Exotismes</a></strong> 

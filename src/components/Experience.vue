@@ -41,7 +41,7 @@ export default {
                     details: [
                         {
                             id: 0,
-                            text: "Développement d'une brochure dématérialiséee en JavaScript"
+                            text: `Développement d'une brochure dématérialisée en JavaScript`
                         },
                         {
                             id: 1,

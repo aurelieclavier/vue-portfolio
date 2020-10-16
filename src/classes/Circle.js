@@ -1,6 +1,6 @@
 export default class Circle {
     circles
-    num = 200
+    num = 300
     maxRadius = 50
     constructor(x, y, dx, dy, radius, color, canvas, ctx, mouse) {
         this.x = x
