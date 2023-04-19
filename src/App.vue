@@ -3,7 +3,7 @@
     <AnimatedBackground
       v-bind:num="200"
       v-bind:max-radius="40"
-      v-bind:colors="['#42b883', '#35495E','lightgrey']"
+      v-bind:colors="['#42b883', '#0DF1A9','lightgrey']"
     />
     <div id="wrapper">
       <router-view />

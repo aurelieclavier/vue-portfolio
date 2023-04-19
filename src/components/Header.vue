@@ -14,7 +14,7 @@ export default {
   data () {
     return {
       name: 'Aurélie',
-      job: 'Développeuse full-stack'
+      job: 'Développeuse front-end'
     }
   }
 }
