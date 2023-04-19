@@ -10,13 +10,16 @@
                 flex-wrap: nowrap;
             }
             li {
+                border: 1px solid rgba(0, 0, 0, 0.381);
                 margin: 2rem 0;
+                padding: 2rem 0 0 0;
+                box-shadow: 3px 3px 9px 3px rgba(0,0,0,0.31);
                 @media screen and (min-width: $tablet) {
                     float: left;
                     width: 45%;
                 }
                 @media screen and (min-width: $small-desktop) {
-                    width: 23%;
+                    width: 30%;
                 }
                 .img-skills{
                     width: 40%;
@@ -41,14 +44,19 @@
                     }
                 }
                 .featuresDetail {
-                    padding: 0.5rem 0;
+                    background-color: $color-blue-vue;
+                    padding: 1rem 2.5rem;
                     border: none;
                     margin: 0;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around;
+                    @media screen and (min-width: $tablet) {
+                        height: 250px;
+                        max-height: 250px;
+                        padding: 1rem 1.5rem;
+                    }
                     p {
-                        background-color: $color-blue-vue;
                         color: $white;
                         margin: 0.3rem;
                         padding: 0.3rem 0.5rem;

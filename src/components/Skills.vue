@@ -30,27 +30,27 @@ export default {
                     text: [
                         {
                             id: 0,
-                            label: 'Java JEE'
-                        },
-                        {
-                            id: 1,
                             label: 'Javascript'
                         },
                         {
-                            id: 2,
-                            label: 'SQL'
-                        },
-                        {
-                            id: 3,
-                            label: 'PHP'
-                        },
-                        {
-                            id: 4,
+                            id: 1,
                             label: 'HTML'
                         },
                         {
-                            id: 5,
+                            id: 2,
                             label: 'CSS'
+                        },
+                        {
+                            id: 3,
+                            label: 'Java JEE'
+                        },
+                        {
+                            id: 4,
+                            label: 'SQL'
+                        },
+                        {
+                            id: 5,
+                            label: 'PHP'
                         }
                     ],
                 },
@@ -61,23 +61,39 @@ export default {
                     text: [
                         {
                             id: 0, 
-                            label: 'Spring'
+                            label: 'ReactJS'
                         },
                         {
                             id: 1,
-                            label: 'Hibernate'
-                        },
-                        {
-                            id: 2,
                             label: 'VueJS'
                         },
                         {
+                            id: 2,
+                            label: 'JQuery'
+                        },
+                        {
                             id: 3,
-                            label: 'Angular 2+'
+                            label: 'Bootstrap'
                         },
                         {
                             id: 4,
-                            label: 'Ionic'
+                            label: 'Tailwind'
+                        },
+                        {
+                            id: 5,
+                            label: 'Spring'
+                        },
+                        {
+                            id: 6,
+                            label: 'Hibernate'
+                        },
+                        {
+                            id: 7,
+                            label: 'JSF'
+                        },
+                        {
+                            id: 7,
+                            label: 'JPA'
                         },
 
                     ],
@@ -89,27 +105,35 @@ export default {
                     text: [
                         {
                             id: 0,
-                            label: 'Eclipse'
+                            label: 'Storybook'
                         },
                         {
                             id: 1,
-                            label: 'Maven'
+                            label: 'Gatsby'
                         },
                         {
                             id: 2,
-                            label: 'MySQL Workbench'
+                            label: 'Figma'
                         },
                         {
                             id: 3,
-                            label: 'Git'
+                            label: 'Adobe XD'
                         },
                         {
                             id: 4,
-                            label: 'BootStrap'
+                            label: 'Git'
                         },
                         {
                             id: 5,
-                            label: 'JQuery'
+                            label: 'Linear'
+                        },
+                        {
+                            id: 6,
+                            label: 'Jira'
+                        },
+                        {
+                            id: 7,
+                            label: 'MySQL WorkBench'
                         }
 
                     ],

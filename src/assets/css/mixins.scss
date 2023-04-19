@@ -37,7 +37,7 @@
     }
     &::after {
         position: relative;
-        right: 0;
+        right: -3px;
         content: "\276f";
         transition: all 0.3s linear;
     }
