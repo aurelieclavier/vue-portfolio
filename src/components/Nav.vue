@@ -7,7 +7,7 @@
                 class="nav-link">
                 <a v-bind:href="link.anchor" 
                     @click="activate(link.id)" 
-                    v-smooth-scroll="{ duration: 1000, offset: -50}">
+                    v-smooth-scroll="{ duration: 800, offset: -50}">
                     {{ link.content }}
                 </a>
             </li>
