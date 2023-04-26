@@ -41,11 +41,13 @@
                         @include shadow-box();
                         .article-number {
                             display: flex;
-                            justify-content: center;
+                            justify-content: right;
                             text-transform: uppercase;
                             font-size: 1.2rem;
                             font-weight: bold;
                             color: $color-green-vue;
+                            margin-bottom: 1rem;
+                            border-bottom: 1px solid grey;
                         }
                         .article-title {
                             display: block;
@@ -108,10 +110,21 @@
                     img {
                         position: relative;
                         top: 50%;
-                        transform: translate(0, -50%);
+                        transform: translate(0, -50%);                         
+                        -webkit-transform: translate(0, -50%) ;
+                        -moz-transform: translate(0, -50%) ;
+                        -ms-transform: translate(0, -50%) ;
+                        -o-transform: translate(0, -50%) ;
                         &.reduc-img-seventy{
                             width: 70%;
                         }
+                        &.drapo {
+                            transform: translate(0, -75%);
+                            -webkit-transform: translate(0, -75%);
+                            -moz-transform: translate(0, -75%);
+                            -ms-transform: translate(0, -75%);
+                            -o-transform: translate(0, -75%);
+}
                         &.reduc-img-seventy-five{
                             width: 75%;
                         }

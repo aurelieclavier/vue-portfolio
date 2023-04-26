@@ -92,7 +92,7 @@ export default {
                             label: 'JSF'
                         },
                         {
-                            id: 7,
+                            id: 8,
                             label: 'JPA'
                         },
 

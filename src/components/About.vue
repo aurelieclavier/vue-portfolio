@@ -6,10 +6,10 @@
     <div class="spotlight">
       <div class="content">
         <article>
-          <p>{{ content.text }}</p>
-          <div class="button">
+          <p v-html="content.text"></p>
+          <!-- <div class="button">
             <router-link :to="liens.url" class="router">{{ liens.label }}</router-link>
-          </div>
+          </div> -->
         </article>
       </div>
       <span class="image">
@@ -32,9 +32,15 @@ export default {
       content: {
         title: "Mon histoire",
         text:
-          "Il y a maintenant " +
-          this.counter() +
-          "que j'ai choisi de devenir développeuse web. Pourquoi? Pour son aspect créatif, pour sa compléxité, pour comprendre comment tout ça fonctionnait et aussi pour être dans un univers qui me correspondait."
+          `&nbsp;&nbsp;&nbsp;Cela fait maintenant ${this.counter()} que j'ai décidé de me lancer dans le développement web, en particulier dans le 
+          domaine du front-end. Cette décision a été motivée par ma passion pour l'aspect créatif de ce métier, sa complexité 
+          technique et ma volonté de comprendre le fonctionnement de l'écosystème web dans son ensemble. Je suis convaincue que ce 
+          domaine est en constante évolution et j'apprécie les nouveaux défis qu'il offre.
+          <br/><br/>
+          &nbsp;&nbsp;&nbsp;En tant que développeuse front- end, j'ai acquis une expertise dans des techniques telles que le HTML, le CSS et le JavaScript, 
+          qui sont les piliers de la création de sites web modernes et interactifs. Je serais ravie d'échanger avec vous sur ces sujets et 
+          de vous aider à réaliser vos projets web en utilisant les dernières technologies et les meilleures pratiques du secteur. 
+          N'hésitez pas à me contacter si vous avez besoin de conseils ou de services de développement front-end professionnels.`,
       }
     };
   },

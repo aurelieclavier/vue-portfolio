@@ -33,10 +33,80 @@ export default {
         return {
             items: [
                 {
-                    id: 0,
+                    id: 9,
                     class: "content-left-container",
                     subClass: "content-left",
-                    articleNumber: "mars 2020 à aujourd'hui",
+                    articleNumber: "2021 - 2022",
+                    articleTitle: "Développeuse front- end - Drapo Solutions",
+                    details: [
+                        {
+                            id: 0,
+                            text: `Développement de nouvelles interfaces pour l’intranet `
+                        },
+                        {
+                            id: 1,
+                            text: "Maintenance corrective et évolutive des sites existants"
+                        },
+                        {
+                            id: 2,
+                            text: "Utilisation de React pour développer le nouveau site de l’entreprise"
+                        },
+                        {
+                            id: 3,
+                            text: "Création d’un plugin Gatsby afin d’utiliser l’API Notion et développement du site"
+                        },
+                        {
+                            id: 4,
+                            text: "Développement du nouveau site vitrine de l'entreprise"
+                        },
+                        {
+                            id: 5,
+                            text: "Mise en place de tests one to one"
+                        },
+                        {
+                            id: 6,
+                            text: "Développement d'un design system via storybook"
+                        }
+                    ],
+                    stack: "ReactJS, Gatsby, StoryBook, VueJS, HTML, SCSS, PlayWright, Git  ",
+                    image: [require("../assets/img/job/drapo.png")],
+                    altImage: "Drapo",
+                    classImage: "reduc-img-seventy drapo"
+                },
+                {
+                    id: 8,
+                    class: "content-right-container",
+                    subClass: "content-right",
+                    articleNumber: "2021",
+                    articleTitle: "Développeuse Jave JEE - Virtual Expo",
+                    details: [
+                        {
+                            id: 0,
+                            text: `Maintenance applicative du système intranet`
+                        },
+                        {
+                            id: 1,
+                            text: "Utiliser les technologies Java JEE pour corriger l'application"
+                        },
+                        {
+                            id: 2,
+                            text: "Mise à jour de la base de données PLSQL"
+                        },
+                        {
+                            id: 3,
+                            text: "Prise en compte des compatibilités cross-navigateurs"
+                        }
+                    ],
+                    stack: "Java JEE, Hibernate, PL SQL, XHTML, Jenkins, Jira, Git",
+                    image: [require("../assets/img/job/ve.png")],
+                    altImage: "Pokémon card",
+                    classImage: "reduc-img-seventy"
+                },
+                {
+                    id: 7,
+                    class: "content-left-container",
+                    subClass: "content-left",
+                    articleNumber: "2020",
                     articleTitle: "Développeuse Full-satck - Exotismes",
                     details: [
                         {
@@ -66,14 +136,14 @@ export default {
                     ],
                     stack: "PLSQL, Hibernate, Java JEE, JSF, JavaScript, CSS, Git",
                     image: [require("../assets/img/job/exotismes.png")],
-                    altImage: "Pokémon card",
+                    altImage: "Exotismes",
                     classImage: "reduc-img-seventy"
                 },
                 {
-                    id: 1,
+                    id: 6,
                     class: "content-right-container",
                     subClass: "content-right",
-                    articleNumber: "décembre 2019 à mars 2020",
+                    articleNumber: "2020",
                     articleTitle: "Gestion de collection de cartes - Projet personnel",
                     details: [
                         {
@@ -107,10 +177,10 @@ export default {
                     classImage: "reduc-img-seventy"
                 },
                 {
-                    id: 2,
+                    id: 5,
                     class: "content-left-container",
                     subClass: "content-left",
-                    articleNumber: "octobre 2019 à novembre 2019",
+                    articleNumber: "2019",
                     articleTitle: "quiz'actu - projet de formation",
                     details: [
                         {
@@ -152,10 +222,10 @@ export default {
                     classImage: "reduc-img-seventy-five"
                 },
                 {
-                    id: 3,
+                    id: 4,
                     class: "content-right-container",
                     subClass: "content-right",
-                    articleNumber: "septembre 2019 à novembre 2019",
+                    articleNumber: "2019",
                     articleTitle: "wild code school - formation développeuse java jee",
                     details: [
                         {
@@ -185,10 +255,10 @@ export default {
                     classImage: "reduc-img-seventy-five"
                 },
                 {
-                    id: 4,
+                    id: 3,
                     class: "content-left-container",
                     subClass: "content-left",
-                    articleNumber: "mars 2019 à avril 2019",
+                    articleNumber: "2019",
                     articleTitle: "jaguar-network - développeuse full-stack",
                     details: [
                         {
@@ -210,10 +280,10 @@ export default {
                     classImage: ""
                 },
                 {
-                    id: 5,
+                    id: 2,
                     class: "content-right-container",
                     subClass: "content-right",
-                    articleNumber: "avril 2018 à juin 2018",
+                    articleNumber: "2018",
                     articleTitle: "smile - développeuse front-end",
                     details: [
                         {
@@ -231,10 +301,10 @@ export default {
                     classImage: ""
                 },
                 {
-                    id: 6,
+                    id: 1,
                     class: "content-left-container",
                     subClass: "content-left",
-                    articleNumber: "mars 2019 à avril 2019",
+                    articleNumber: "2018",
                     articleTitle: "polygonal-design - développeuse full-stack (stage)",
                     details: [
                         {
@@ -273,10 +343,10 @@ export default {
                     classImage: "reduc-img-seventy"
                 },
                 {
-                    id: 7,
+                    id: 0,
                     class: "content-right-container",
                     subClass: "content-right",
-                    articleNumber: "octobre 2017 à décembre 2017",
+                    articleNumber: "2017",
                     articleTitle: "3w academy - formation développeuse web",
                     details: [
                         {
