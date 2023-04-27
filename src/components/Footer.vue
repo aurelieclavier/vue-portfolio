@@ -47,7 +47,7 @@ export default {
             ],
             cv: {
                 id: 0,
-                link: "files/cv.pdf",
+                link: "files/CV_Aurelie.pdf",
                 image: [require("../assets/img/cv.png")],
                 alt: "cv aurelie"     
             }
